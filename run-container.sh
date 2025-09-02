@@ -21,6 +21,7 @@ docker run -it \
     -e DISPLAY=$LOCAL_IP:0 \
     -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
     -v "$WORKSPACE_PATH":/root/workspace \
+    -p 7001:7000 \
     --name ubuntu18-container \
     ubuntu18-conda-x11
 
